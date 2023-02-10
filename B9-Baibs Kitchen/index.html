@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baib's Kitchen</title>
+    <!-- Start WOWSlider.com HEAD section -->
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+    <!-- End WOWSlider.com HEAD section -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 10vh;
+            /* background-color: #1F456E; */
+            background-color: #005277;
+            display: flex;
+        }
+        .logo {
+            height: 9vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .logo_para {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0 0 0 55vw;
+        }
+
+        .nav_items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1vh;
+            width: 3vw;
+            padding: 25px;
+        }
+
+        .nav_anchortags {
+            text-decoration: none;
+            color: white;
+            /* color: #eaa221; */
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 580;
+        }
+
+
+        .nav_items:hover {
+            /* background-color: white; */
+            background-color: #eaa221;
+        }
+
+        .nav_anchortags:hover {
+            /* color: #0d52bd; */
+            /* color:#1F456E; */
+            color: #005277;
+            letter-spacing: 3px;
+            /* background-color: white; */
+            background-color: #eaa221;
+            font-weight: bold;
+
+        }
+
+        .Popular_deals_heading {
+            text-align: center;
+            color: #1F456E;
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .deals_table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .deals_table_td {
+            padding: 21px;
+        }
+
+        .deals_images {
+            height: 60vh;
+        }
+
+        .deals_images:hover {
+            box-shadow: 10px 5px 10px 5px #bfafb2;
+        }
+
+        footer {
+            height: 30vh;
+            /* background-color: #1F456E; */
+            background-color: #005277;
+
+        }
+
+        .footer_table {
+            display: flex;
+            justify-content: center;
+            padding-top: 17px;
+        }
+
+
+        .footer_table_td {
+            padding: 15px;
+
+        }
+
+        .social_links_logo {
+            width: 2vw;
+        }
+
+        .social_links_logo_youtube {
+            width: 3vw;
+        }
+
+        .tag_line {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            text-align: center;
+            /* font-weight: 450; */
+            letter-spacing: 0.5px;
+        }
+
+        /* .tag_line:hover {
+            color: #eaa221;
+        } */
+        .copyright_tagline{
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            font-size: small;
+            text-align: center;
+            margin: 39px 0 0 0;        
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p class="logo_para">Baib's Kitchen</p>
+        </div>
+        <nav>
+            <div class="nav_items"><a href="#" class="nav_anchortags">Home</a></div>
+            <div class="nav_items"><a href="#Deals" class="nav_anchortags">Deals</a></div>
+            <div class="nav_items"><a href="menu.html" class="nav_anchortags">Menu</a></div>
+            <div class="nav_items"><a href="#contactus" class="nav_anchortags">Contact</a></div>
+        </nav>
+    </header> <br>
+    <div class="slider">
+        <!-- Start WOWSlider.com BODY section -->
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li><img src="data1/images/pic1.jpg" alt="" title="" id="wows1_0" /></li>
+                    <li><img src="data1/images/pic2.jpg" alt="" title="" id="wows1_1" /></li>
+                    <li><img src="data1/images/pic3.jpg" alt="" title="" id="wows1_2" /></li>
+                    <li><img src="data1/images/pic4.jpg" alt="" title="" id="wows1_3" /></li>
+                    <li><img src="data1/images/pic5.jpg" alt="" title="" id="wows1_4" /></li>
+                    <li><img src="data1/images/pic6.jpg" alt="" title="" id="wows1_5" /></li>
+                    <li><a href="http://wowslider.net"><img src="data1/images/pic7.jpg" alt="bootstrap slider" title=""
+                                id="wows1_6" /></a></li>
+                    <li><img src="data1/images/pic8.jpg" alt="" title="" id="wows1_7" /></li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic1.jpg" alt="" />1</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic2.jpg" alt="" />2</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic3.jpg" alt="" />3</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic4.jpg" alt="" />4</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic5.jpg" alt="" />5</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic6.jpg" alt="" />6</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic7.jpg" alt="" />7</span></a>
+                    <a href="#" title=""><span><img src="data1/tooltips/pic8.jpg" alt="" />8</span></a>
+                </div>
+            </div>
+            <div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css slider</a> by
+                WOWSlider.com v9.0</div>
+            <div class="ws_shadow"></div>
+        </div>
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
+    </div>
+
+    <br><br><br>
+    <div class="deals_section">
+        <h1 class="Popular_deals_heading" id="Deals">Popular Deals</h1>
+        <br><br><br>
+        <div class="table">
+            <table class="deals_table">
+                <tr class="deals_table_tr">
+                    <td class="deals_table_td"><img src="Deals images/2.jpg" alt="" class="deals_images"></td>
+                    <td class="deals_table_td"><img src="Deals images/3.jpg" alt="" class="deals_images"></td>
+                    <td class="deals_table_td"><img src="Deals images/4.jpg" alt="" class="deals_images"></td>
+                </tr>
+                <tr class="deals_table_tr">
+                    <td class="deals_table_td"><img src="Deals images/5.jpg" alt="" class="deals_images"></td>
+                    <td class="deals_table_td"><img src="Deals images/6.jpg" alt="" class="deals_images"></td>
+                    <td class="deals_table_td"><img src="Deals images/7.jpg" alt="" class="deals_images"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <br><br><br>
+    <footer>
+        <table class="footer_table" id="contactus">
+            <tr class="footer_table_tr">
+                <td class="footer_table_td"><a href="" target="_blank"><img src="Contact Us Icon pngs/fb.png" alt=""
+                            class="social_links_logo"></a></td>
+                <td class="footer_table_td"><a href="https://wa.me/qr/XASHBSVPMI5PC1" target="_blank"><img
+                            src="Contact Us Icon pngs/WhatsApp.svg.png" alt="" class="social_links_logo"></a></td>
+                <td class="footer_table_td"><a href="https://www.instagram.com/baibskitchen/" target="_blank"><img
+                            src="Contact Us Icon pngs/insta.png" alt="" class="social_links_logo"></a></td>
+                <td class="footer_table_td"><a href="https://www.youtube.com/watch?v=5UPcpbXJFAY&feature=youtu.be"
+                        target="_blank"><img src="Contact Us Icon pngs/y.png" alt=""
+                            class="social_links_logo_youtube"></a></td>
+            </tr>
+        </table>
+        <p class="tag_line">We delivers cravings snack items and food items to your doorstep in just 10 minutes<br>order
+            food you love that get's to your doorstep</p>
+            <p class="copyright_tagline">&copy; 2022 Baib'skitchen.com
+            </p>
+    </footer>
+</body>
+
+</html>

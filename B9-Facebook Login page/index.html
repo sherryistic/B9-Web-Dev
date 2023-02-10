@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook - log in or sign up</title>
+
+    <style>
+        body {
+            background-color: #EDF0F5;
+        }
+
+        .header {
+            height: 100px;
+            width: 100%;
+            /* border: 2px solid blueviolet; */
+        }
+
+        .section {
+            height: 400px;
+            width: 55%;
+            /* border: 2px solid red; */
+        }
+
+        .article {
+            height: 400px;
+            width: 28.5%;
+            float: right;
+            margin-top: -455px;
+            margin-right: 190px;
+
+            /* border: 2px solid black; */
+        }
+
+        .footer {
+            background-color: white;
+            height: 210px;
+            width: 100%;
+            /* border: 2px solid blue; */
+
+        }
+
+        .blank_space {
+            background-color: #EDF0F5;
+            height: 180px;
+            width: 100%;
+        }
+
+        .facebook_logo {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1877F2;
+            font-size: 64px;
+            margin-top: 80px;
+            margin-left: 160px;
+        }
+
+        .lineunder_FBlogo {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 160px;
+            margin-top: -50px;
+            font-size: 25px;
+
+        }
+
+        .form {
+            background-color: white;
+        }
+
+        .email_input {
+            height: 40px;
+            
+        }
+
+        .input_password {
+            height: 40px;
+        }
+
+        .login_button {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1877F2;
+            font-size: larger;
+            color: white;
+            width: 355px;
+            height: 40px;
+
+        }
+
+        .Forgotten_password {
+            text-align: center;
+        }
+
+        .new_acc_btn {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #12AD2B;
+            font-size: larger;
+            color: white;
+            width: 200px;
+            height: 40px;
+            margin-bottom: 20px;
+            margin-right: 15px;
+        }
+
+
+        .create_page_line {
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        ::placeholder {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            text-indent: 15px;
+        }
+
+        .footer_table {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-left: 160px;
+            font-size: 11.5px;
+
+        }
+
+        .plus_button {
+            font-size: 15px;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="header"></div>
+
+    <div class="section">
+        <h2 class="facebook_logo">facebook</h2>
+        <p class="lineunder_FBlogo">Facebook helps you connect and share <br> with the people in your life.</p>
+    </div>
+
+    <div class="article">
+        <form action="http://www.example.com/comments.php" class="form">
+
+            <table cellpadding="10">
+                <tr>
+                    <td><center><input class="email_input" type="email" name="usermailorphone"
+                            placeholder="Email address or phone number" size="45px" required="required"></td></center>
+                </tr>
+
+                <tr>
+                    <td><center><input class="input_password" type="password" name="userpassword" placeholder="Password"
+                            size="45px"></td></center>
+                </tr>
+
+                <tr>
+                    <td><center><input class="login_button" type="submit" value="Log in"></td></center>
+                </tr>
+
+                <tr>
+                    <td class="Forgotten_password"> <a
+                            href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0"
+                            target="_blank">Forgotten password?</a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <hr>
+                    </td>
+                </tr>
+
+                <tr>
+            </table>
+
+            <center>
+                <button class="new_acc_btn"
+                    onclick="document.location='https://www.facebook.com/campaign/landing.php?campaign_id=1653377901&extra_1=s%7Cc%7C358050429326%7Ce%7Ccreate%20facebook%20account%7C&placement=&creative=358050429326&keyword=create%20facebook%20account&partner_id=googlesem&extra_2=campaignid%3D1653377901%26adgroupid%3D65139788602%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-302772061339%26loc_physical_ms%3D9077146%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI0O_tu_i69gIVk4jVCh0TQAghEAAYASAAEgLzyvD_BwE'"
+                    target="_blank">Create New Account</button>
+            </center>
+        </form>
+
+        <br>
+
+        <p class="create_page_line">
+            <center><b>Create a Page </b> for a celebrity, brand or business.</center>
+        </p>
+    </div>
+
+    <div class="blank_space"></div>
+
+
+
+    <div class="footer">
+
+        <table class="footer_table" cellpadding="6">
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>English (UK)</td>
+                <td>اردو</td>
+                <td>پښتو</td>
+                <td>العربية</td>
+                <td>हिन्दी</td>
+                <td>বাংলা</td>
+                <td>ਪੰਜਾਬੀ</td>
+                <td>فارسی</td>
+                <td>ગુજરાતી</td>
+                <td>Deutsch</td>
+                <td>Español</td>
+                <td><button class="plus_button" onclick="document.location='none'">+</button></td>
+            </tr>
+        </table>
+
+        <hr width="1000px">
+
+        <table class="footer_table" cellpadding="6">
+
+            <tr>
+                <td>Sign Up</td>
+                <td>Log In</td>
+                <td>Messenger</td>
+                <td>Facebook Lite</td>
+                <td>Watch</td>
+                <td>Places</td>
+                <td>Games</td>
+                <td>Marketplace</td>
+                <td>Facebook Pay</td>
+                <td>Oculus</td>
+                <td>Portal</td>
+                <td>Instagram</td>
+                <td>Bulletin</td>
+                <td>Local</td>
+            </tr>
+        </table>
+
+
+        <table class="footer_table" cellpadding="6">
+
+            <tr>
+                <td>Fundraisers</td>
+                <td>Services</td>
+                <td>Voting</td>
+                <td>Information</td>
+                <td>Centre</td>
+                <td>Groups</td>
+                <td>About</td>
+                <td>Create ad</td>
+                <td>Create Page</td>
+                <td>Developers</td>
+                <td>Careers</td>
+                <td>Privacy</td>
+                <td>Cookies</td>
+                <td>AdChoices</td>
+                <td>Terms</td>
+            </tr>
+        </table>
+
+        <table class="footer_table" cellpadding="6">
+            <tr>
+                <td>Help</td>
+            </tr>
+        </table>
+        <br>
+        <table class="footer_table" cellpadding="6">
+            <tr>
+                <td>Meta © 2022</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

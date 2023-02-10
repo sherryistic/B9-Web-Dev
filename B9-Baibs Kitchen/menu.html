@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baib's Kitchen</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 10vh;
+            /* background-color: #1F456E; */
+            background-color: #005277;
+            display: flex;
+        }
+
+        .logo {
+            height: 9vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .logo_para {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0 0 0 55vw;
+        }
+
+        .nav_items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1vh;
+            width: 3vw;
+            padding: 25px;
+        }
+
+        .nav_anchortags {
+            text-decoration: none;
+            color: white;
+            /* color: #eaa221; */
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 580;
+        }
+
+
+        .nav_items:hover {
+            /* background-color: white; */
+            background-color: #eaa221;
+        }
+
+        .nav_anchortags:hover {
+            /* color: #0d52bd; */
+            /* color:#1F456E; */
+            color: #005277;
+            letter-spacing: 3px;
+            /* background-color: white; */
+            background-color: #eaa221;
+            font-weight: bold;
+
+        }
+
+        footer {
+            height: 60vh;
+            /* background-color: #1F456E; */
+            background-color: #005277;
+
+        }
+
+
+        .footer_table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+
+        .footer_table_td {
+            padding: 15px;
+
+        }
+
+        .social_links_logo {
+            width: 2vw;
+        }
+
+        .social_links_logo_youtube {
+            width: 3vw;
+        }
+
+        .tag_line {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            text-align: center;
+            /* font-weight: 450; */
+            letter-spacing: 2px;
+            font-size: small;
+        }
+
+        /* .tag_line:hover {
+            color: #eaa221;
+        } */
+        .t {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            /* margin-right: 60px; */
+
+        }
+
+        .A th,
+        .A td {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            text-align: center;
+            padding-left: 65px;
+        }
+
+        .A td {
+            font-size: small;
+
+
+        }
+
+        .A td a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .A tr td a:hover {
+            color: #eaa221;
+        }
+
+        .copyright_tagline {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            font-size: small;
+            text-align: center;
+            margin: 3px 0 0 0;
+        }
+
+        .main_heading {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            color: #005277;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .categories_div {
+            height: 6vh;
+            width: 19vw;
+            border: 2px solid #005277;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .categories_a {
+            text-decoration: none;
+            color: #005277;
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: larger;
+        }
+
+        .categories_div:hover {
+            /* background-color: white; */
+            background-color: #005277;
+        }
+
+        .categories_a:hover {
+            /* color: #0d52bd; */
+            /* color:#1F456E; */
+            color: white;
+            letter-spacing: 1.5px;
+            /* background-color: white; */
+            background-color: #005277;
+            /* font-weight: bold; */
+
+        }
+
+        .SRS_h {
+            color: #005277;
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            margin-left: 130px;
+        }
+
+        .flavours_div {
+            border: 1px solid #005277;
+            border-radius: 10px;
+            width: 80vw;
+            height: 25vh;
+            margin-left: 125px;
+
+        }
+
+        .Dip_Sauces_div {
+
+            border: 1px solid #005277;
+            border-radius: 10px;
+            width: 80vw;
+            height: 19vh;
+            margin-left: 125px;
+        }
+
+        .flavours_div:hover,
+        .Dip_Sauces_div:hover {
+            box-shadow: 10px 5px 10px 5px #bfafb2;
+        }
+
+        .SRS_flavours_headings {
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: #005277;
+            font-size: x-large;
+            margin: 15px;
+        }
+
+        .SRS_flavours_ingredients {
+
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            color: #005277;
+            margin-left: 15px;
+        }
+
+        .order_now_btn {
+            background-color: #005277;
+            border: 1px solid #005277;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 6vh;
+            width: 8vw;
+            margin: 25px 0 0 960px;
+
+        }
+
+        .order_now_btn_a {
+
+            color: white;
+            text-decoration: none;
+            font-family: 'Merriweather', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-size: small;
+        }
+
+        .order_now_btn:hover {
+            /* background-color: white; */
+            background-color: white;
+        }
+
+        .order_now_btn_a:hover {
+            /* color: #0d52bd; */
+            /* color:#1F456E; */
+            color: white;
+            letter-spacing: 1px;
+            /* background-color: white; */
+            background-color: white;
+            color: #005277;
+            font-weight: bold;
+
+        }
+
+        .top_arrow {
+            margin-left: 1250px;
+            margin-top: -150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <p class="logo_para">Baib's Kitchen</p>
+        </div>
+        <nav>
+            <div class="nav_items"><a href="index.html" class="nav_anchortags">Home</a></div>
+            <div class="nav_items"><a href="index.html#Deals" class="nav_anchortags">Deals</a></div>
+            <div class="nav_items"><a href="#" class="nav_anchortags">Menu</a></div>
+            <div class="nav_items"><a href="menu.html#contactus" class="nav_anchortags">Contact</a></div>
+        </nav>
+    </header><br><br><br>
+    <main>
+        <h1 class="main_heading">HOME MADE FROZEN ITEMS</h1><br><br><br>
+        <div class="categories">
+            <div class="categories_div"><a href="#SamosaFlavours" class="categories_a">Samosa Flavours</a></div>
+            <div class="categories_div"><a href="#RollFlavours" class="categories_a">Roll Flavours</a></div>
+            <div class="categories_div"><a href="#HomeMadeDipSauces" class="categories_a">Home Made Dip Sauces</a></div>
+        </div><br><br><br><br><br><br>
+        <h1 class="SRS_h" id="SamosaFlavours">Samosa Flavours</h1><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="BeefSamosa">Beef Samosa</h2>
+            <p class="SRS_flavours_ingredients">Filled with seasoned minched beef with onion</p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        </div><br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="MalaiBotiSamosa">Malai Boti Samosa</h2>
+            <p class="SRS_flavours_ingredients">Filled with smoked creamy flavour chicken</p>
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div><br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="ChickenTikkaSamosa">Chicken Tikka Samosa</h2>
+            <p class="SRS_flavours_ingredients">Filled with smoked tikka flavour chicken</p>
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div><br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="PizzaSamosa">Pizza Samosa</h2>
+            <p class="SRS_flavours_ingredients">Filled with pizza sauce & chicken & pizza cheese</p>
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div><br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="WantonChickenSamosa">Wanton Chicken Samosa</h2>
+            <p class="SRS_flavours_ingredients">Filled with seasoned minched chicken & spring onion</p>
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div><br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="ChocolateSamosa">Chocolate Samosa</h2>
+            <p class="SRS_flavours_ingredients">Filled with the combination of mix & dark chocolate</p>
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div><br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="PotatoCheeseBalls">Potato Cheese Balls</h2>
+            <p class="SRS_flavours_ingredients">Mashed potatos with spices cilatro & onions & center filled cheese
+            </p>
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        <br><br><br><br>
+        <h1 class="SRS_h" id="RollFlavours">Roll Flavours</h1><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="MozzarellaCheeseRoll(Mini)">Mozzarella Cheese Roll (Mini)</h2>
+            <p class="SRS_flavours_ingredients">Wrapped in Pure Mozzarella Cheese</p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="EggVegetableRoll">Egg Vegetable Roll</h2>
+            <p class="SRS_flavours_ingredients">Filled with seasoned vegetables & eggs</p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="flavours_div">
+            <h2 class="SRS_flavours_headings" id="ChickenCheeseRoll">Chicken Cheese Roll</h2>
+            <p class="SRS_flavours_ingredients">Marinated chicken with cheese & onion</p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+
+        <br><br><br><br>
+        <h1 class="SRS_h" id="HomeMadeDipSauces">Home Made Dip Sauces</h1><br>
+        <div class="Dip_Sauces_div">
+            <h2 class="SRS_flavours_headings" id="SweetMintPaste">Sweet Mint Paste (پودینہ) </h2>
+            <p class="SRS_flavours_ingredients"></p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="Dip_Sauces_div">
+            <h2 class="SRS_flavours_headings" id="GreenRaita">Green Raita (رائیتہ)</h2>
+            <p class="SRS_flavours_ingredients"></p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="Dip_Sauces_div">
+            <h2 class="SRS_flavours_headings" id="Tamarind">Tamarind (املی)</h2>
+            <p class="SRS_flavours_ingredients"></p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="Dip_Sauces_div">
+            <h2 class="SRS_flavours_headings" id="Garlic">Garlic(لہسن)</h2>
+            <p class="SRS_flavours_ingredients"></p>
+
+            <div class="order_now_btn">
+                <a href="https://www.instagram.com/baibskitchen/" class="order_now_btn_a">Order Now</a>
+            </div>
+        </div>
+    </main>
+
+    <br><br><br><br><br><br>
+    <footer>
+        <table class="footer_table" id="contactus">
+            <tr class="footer_table_tr">
+                <td class="footer_table_td"><a href="" target="_blank"><img src="Contact Us Icon pngs/fb.png" alt=""
+                            class="social_links_logo"></a></td>
+                <td class="footer_table_td"><a href="https://wa.me/qr/XASHBSVPMI5PC1" target="_blank"><img
+                            src="Contact Us Icon pngs/WhatsApp.svg.png" alt="" class="social_links_logo"></a></td>
+                <td class="footer_table_td"><a href="https://www.instagram.com/baibskitchen/" target="_blank"><img
+                            src="Contact Us Icon pngs/insta.png" alt="" class="social_links_logo"></a></td>
+                <td class="footer_table_td"><a href="https://www.youtube.com/watch?v=5UPcpbXJFAY&feature=youtu.be"
+                        target="_blank"><img src="Contact Us Icon pngs/y.png" alt=""
+                            class="social_links_logo_youtube"></a></td>
+            </tr>
+        </table>
+        <p class="tag_line">We delivers cravings snack items and food items to your doorstep in just 10 minutes<br>order
+            food you love that get's to your doorstep</p>
+
+        <div class="t">
+            <table class="A">
+                <tr>
+                    <th>Samosa Flavour</th>
+                    <th>Roll Flavour</th>
+                    <th>Home Made Dip Sauces</th>
+                </tr>
+                <tr>
+                    <td><a href="#BeefSamosa"> Beef Samosa</a></td>
+                    <td><a href="#MozzarellaCheeseRoll(Mini)"> Mozzarella Cheese Roll (Mini)</a></td>
+                    <td><a href="#SweetMintPaste"> Sweet Mint Paste (پودینہ)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#MalaiBotiSamosa"> Malai Boti Samosa</a></td>
+                    <td><a href="#EggVegetableRoll"> Egg Vegetable Roll</a></td>
+                    <td><a href="#GreenRaita"> Green Raita (رائیتہ)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#ChickenTikkaSamosa"> Chicken Tikka Samosa</a></td>
+                    <td><a href="#ChickenCheeseRoll"> Chicken Cheese Roll</a></td>
+                    <td><a href="#Tamarind"> Tamarind (املی)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#PizzaSamosa"> Pizza Samosa</a></td>
+                    <td><a href=""> </td>
+                    <td><a href="#Garlic"> Garlic(لہسن)</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#WantonChickenSamosa"> Wanton Chicken Samosa</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#ChocolateSamosa"> Chocolate Samosa</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#PotatoCheeseBalls"> Potato Cheese Balls</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <a href=""><img class="top_arrow" src="top-arrow-icon-3.jpg" alt="" height="40vh"></a>
+        <p class="copyright_tagline">&copy; 2022 Baib'skitchen.com
+        </p>
+    </footer>
+</body>
+
+</html>
